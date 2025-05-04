@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "MovieBot Launcher",
+  "version": "1.0",
+  "description": "Launch MovieBot web app via Chrome extension.",
+  "action": {
+    "default_title": "Open MovieBot",
+    "default_icon": "icon.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "permissions": [],
+  "host_permissions": ["https://yourapp.web.app/"],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self';"
+  }
+}
